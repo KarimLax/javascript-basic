@@ -1,0 +1,60 @@
+<html>
+    <body>  
+        <input type="text" id="first"/>
+        <input type="text" id="sign" style="width: 25px;">
+        <input type="second" id="second"/>
+       
+        <button onclick="art()">Click aquí</button>
+        <div id="result"></div>
+
+        <script> 
+        console.log("Hola mundo");
+    alert("Me llamo Karim");
+    var myName = "Karim ";
+    var myLastName = "Lachguer";
+    var sum = myName + myLastName;
+    console.log(sum)
+    var a = 10;
+    var b = 11;
+    var c = (a+b)
+    console.log(`La suma entre ${a} y ${b} es ${c}`)
+    var nota_examen = 6.6;
+    if (nota_examen>4.99) {alert(`Has aprobado el examen con ${nota_examen}`);}
+    const myStr = "Tinc un cotxe de color blau";
+    console.log(myStr.replace("blau","verd"));
+    const myStr1 = "Tinc un cotxe de color blau";
+    console.log(myStr1.replace(/o/g,"u"));
+    const objecte = ['taula', 'cadira', 'ordinador', 'libreta'];
+    objecte.forEach((objecte, index) => {console.log("l'objecte " + objecte + " està a la posició " + index);});
+
+
+
+                function art(){
+
+                   var first = parseInt(document.getElementById("first").value);
+                   var second = parseInt(document.getElementById("second").value);
+                   var sign = document.getElementById("sign").value;
+                   if(sign=="+")
+                   {
+                       var result = first+second;
+                   }
+                   else if(sign=="-")
+                   {
+                       var result = first-second;
+                   }
+                   else if(sign=="*")
+                   {
+                   var result = first * second;
+                   }
+                   else if(sign=="/")
+                   {
+                   var result = first / second;
+                   }
+                   document.getElementById("result").innerHTML=result
+
+                }
+
+        </script>
+   
+    </body>
+</html>
